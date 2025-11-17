@@ -3,9 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faHeart, faCircle } from '@fortawesome/free-solid-svg-icons'
 import { Analytics } from '@vercel/analytics/react'
 import { Outlet, Link, useLocation } from 'react-router-dom'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { AnimatePresence } from 'motion/react'
-import { useLanyard } from 'react-use-lanyard';
 
 function App() { 
   const menus = [
@@ -17,11 +16,13 @@ function App() {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
 
-  const lanyard = useLanyard({
-    userId: "864189836541427733",
-  });
+  const [isOnline, setIsOnline] = useState(false);
 
-  let isOnline = lanyard.data?.data?.discord_status !== "offline";
+  useEffect(() => {
+    fetch("/api/status")
+      .then(res => res.json())
+      .then(data => setIsOnline(data.online));
+  }, []);
 
   return (
     <>
