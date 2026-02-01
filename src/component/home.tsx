@@ -79,7 +79,7 @@ function Home() {
             <div className="rounded-lg bg-mantle p-4 text-accent shadow-md transition-shadow">
               <dt className="flex justify-between items-center">
                 <span className="underline underline-offset-3 hover:decoration-2">
-                  <a href="https://github.com/Koipix/Arona" className="text-2xl text-pink-200">
+                  <a href="https://github.com/koipix/Arona" className="text-2xl text-pink-200">
                     Arona
                   </a>
                 </span>
@@ -95,7 +95,7 @@ function Home() {
             <div className="rounded-lg bg-mantle p-4 text-accent shadow-md transition-shadow">
               <dt className="flex justify-between items-center">
                 <span className="underline underline-offset-3 hover:decoration-2">
-                  <a href="https://github.com/Koipix/todo" className="text-2xl text-pink-200">
+                  <a href="https://github.com/koipix/todo" className="text-2xl text-pink-200">
                     Todo
                   </a>
                 </span>
@@ -108,7 +108,7 @@ function Home() {
             <div className="rounded-lg bg-mantle p-4 text-accent shadow-md transition-shadow">
               <dt className="flex justify-between items-center">
                 <span className="underline underline-offset-3 hover:decoration-2">
-                  <a href="https://github.com/Koipix/4cboard" className="text-2xl text-pink-200">
+                  <a href="https://github.com/koipix/4cboard" className="text-2xl text-pink-200">
                     4cboard
                   </a>
                 </span>
